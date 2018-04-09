@@ -9,7 +9,14 @@ print(robot.left_encoder_counts)
 # change mode to drive (SAFE|FULL)
 robot.oi_mode = MODES.SAFE
 robot.drive_straight(100)
-time.sleep( 5 ) 
+time.sleep( 3 )
+robot.spin_left(100)
+time.sleep(1)
+robot.drive_straight(100)
+robot.spin_right(100)
+time.sleep(2)
+robot.drive_straight(100)
+time.sleep(2)
 # stop driving
 robot.drive_straight(0)
 # return to passive mode
