@@ -10,7 +10,7 @@ through Alexa App.
 
 Project Resources:
 - Management Dashboard: https://github.com/bhargav-nunna/iRobot-Alexa-Integration/projects/1
-- Wiki:https://github.com/bhargav-nunna/iRobot-Alexa-Integration/wiki
+- Wiki: https://github.com/bhargav-nunna/iRobot-Alexa-Integration/wiki
 
 Current Architecture:
 
