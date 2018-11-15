@@ -8,6 +8,15 @@ In this project, I would like mount a **Raspberry Pi**[2] on Create2 bot and con
 act as a proxy between Create2 and Amazon Alexa. This will make the Create2 a voice controlled robot that can also be controlled
 through Alexa App.
 
+Project Resources:
+- Management Dashboard: https://github.com/bhargav-nunna/iRobot-Alexa-Integration/projects/1
+- Wiki:https://github.com/bhargav-nunna/iRobot-Alexa-Integration/wiki
+
+Current Architecture:
+
+![architecture.png](https://github.com/bhargav-nunna/iRobot-Alexa-Integration/blob/master/architecure.png)
+
+References:
 - [1]https://www.irobot.com/about-irobot/stem/create-2.aspx
 - [2]https://www.raspberrypi.org/
 - [3]https://developer.amazon.com/alexa
