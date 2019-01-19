@@ -39,6 +39,8 @@ def initiateCleaning():
 		cleaning=1
 	except e:
 		print(e)
+	
+	return "Success"
 
 @app.route("/pause")
 def pauseCleaning():
@@ -55,6 +57,8 @@ def pauseCleaning():
 			print('Robot already pasued. Ignoring request.')
 	except e:
 		print(e)
+	
+	return "Success"
 
 @app.route("/dock")
 def startSelfDocking():
@@ -70,6 +74,8 @@ def startSelfDocking():
 		print('Robot started docking process.')
 	except e:
 		print(e)
+	
+	return "Success"
 
 @app.route("/")
 def welcome():
