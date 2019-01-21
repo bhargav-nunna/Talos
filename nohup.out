@@ -1,0 +1,229 @@
+ * Serving Flask app "robotCommandServer"
+Traceback (most recent call last):
+  File "/usr/bin/flask", line 11, in <module>
+    load_entry_point('Flask==0.12.1', 'console_scripts', 'flask')()
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 513, in main
+    cli.main(args=args, prog_name=name)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 380, in main
+    return AppGroup.main(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 696, in main
+    rv = self.invoke(ctx)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1060, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/lib/python3/dist-packages/click/core.py", line 889, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args[1:], **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 438, in run_command
+    use_debugger=debugger, threaded=with_threads)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 708, in run_simple
+    inner()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 670, in inner
+    fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 564, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 476, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+socket.gaierror: [Errno -5] No address associated with hostname
+ * Serving Flask app "robotCommandServer"
+Traceback (most recent call last):
+  File "/usr/bin/flask", line 11, in <module>
+    load_entry_point('Flask==0.12.1', 'console_scripts', 'flask')()
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 513, in main
+    cli.main(args=args, prog_name=name)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 380, in main
+    return AppGroup.main(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 696, in main
+    rv = self.invoke(ctx)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1060, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/lib/python3/dist-packages/click/core.py", line 889, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args[1:], **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 438, in run_command
+    use_debugger=debugger, threaded=with_threads)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 708, in run_simple
+    inner()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 670, in inner
+    fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 564, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 476, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+socket.gaierror: [Errno -5] No address associated with hostname
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 31, in parse
+    return Version(version)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 202, in __init__
+    raise InvalidVersion("Invalid version: '{0}'".format(version))
+pkg_resources.extern.packaging.version.InvalidVersion: Invalid version: '.py'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/flask", line 6, in <module>
+    from pkg_resources import load_entry_point
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3019, in <module>
+    @_call_aside
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3003, in _call_aside
+    f(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3032, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 646, in _build_master
+    ws = cls()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 639, in __init__
+    self.add_entry(entry)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 695, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2005, in find_on_path
+    path_item_entries = _by_version_descending(os.listdir(path_item))
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1989, in _by_version_descending
+    return sorted(names, key=_by_version, reverse=True)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1987, in _by_version
+    return [packaging.version.parse(part) for part in parts]
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1987, in <listcomp>
+    return [packaging.version.parse(part) for part in parts]
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 33, in parse
+    return LegacyVersion(version)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 76, in __init__
+    self._key = _legacy_cmpkey(self._version)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 141, in _legacy_cmpkey
+    for part in _parse_version_parts(version.lower()):
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 115, in _parse_version_parts
+    for part in _legacy_version_component_re.split(s):
+KeyboardInterrupt
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+192.168.1.163 - - [19/Jan/2019 23:55:06] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "robotCommandServer"
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+192.168.1.163 - - [19/Jan/2019 23:55:27] "GET / HTTP/1.1" 200 -
+192.168.1.163 - - [19/Jan/2019 23:56:11] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "robotCommandServer"
+Traceback (most recent call last):
+  File "/usr/bin/flask", line 11, in <module>
+    load_entry_point('Flask==0.12.1', 'console_scripts', 'flask')()
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 513, in main
+    cli.main(args=args, prog_name=name)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 380, in main
+    return AppGroup.main(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 696, in main
+    rv = self.invoke(ctx)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 1060, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/lib/python3/dist-packages/click/core.py", line 889, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/click/decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args[1:], **kwargs)
+  File "/usr/lib/python3/dist-packages/click/core.py", line 534, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/flask/cli.py", line 438, in run_command
+    use_debugger=debugger, threaded=with_threads)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 708, in run_simple
+    inner()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 670, in inner
+    fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 564, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 476, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+192.168.1.163 - - [19/Jan/2019 23:56:45] "GET / HTTP/1.1" 200 -
+192.168.1.163 - - [19/Jan/2019 23:56:50] "GET /clearnm HTTP/1.1" 404 -
+[2019-01-19 23:56:57,015] ERROR in app: Exception on /clean [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/robotCommandServer.py", line 33, in initiateCleaning
+    robot=initateConnnection()
+  File "/home/pi/Projects/iRobot-Alexa-Integration/robotCommandServer.py", line 28, in initateConnnection
+    robot = Create2(port)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 35, in __init__
+    self._attach_to_robot(port, baud_rate, timeout)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 59, in _attach_to_robot
+    self.start()
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 173, in start
+    self._verify_mode(MODES.PASSIVE)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 126, in _verify_mode
+    if self.oi_mode != mode:
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 498, in oi_mode
+    self._oi_mode = unsigned_byte_response(self._read_sensor_data(35))
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 74, in _read_sensor_data
+    raise Exception("Did not receive data")
+Exception: Did not receive data
+192.168.1.163 - - [19/Jan/2019 23:56:57] "GET /clean HTTP/1.1" 500 -
+192.168.1.163 - - [19/Jan/2019 23:56:59] "GET / HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+192.168.1.165 - - [21/Jan/2019 03:23:50] "GET / HTTP/1.1" 200 -
+192.168.1.165 - - [21/Jan/2019 03:23:50] "GET /favicon.ico HTTP/1.1" 404 -
+[2019-01-21 03:23:59,297] ERROR in app: Exception on /clean [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/robotCommandServer.py", line 33, in initiateCleaning
+    robot=initateConnnection()
+  File "/home/pi/Projects/iRobot-Alexa-Integration/robotCommandServer.py", line 28, in initateConnnection
+    robot = Create2(port)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 35, in __init__
+    self._attach_to_robot(port, baud_rate, timeout)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 59, in _attach_to_robot
+    self.start()
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 173, in start
+    self._verify_mode(MODES.PASSIVE)
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 126, in _verify_mode
+    if self.oi_mode != mode:
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 498, in oi_mode
+    self._oi_mode = unsigned_byte_response(self._read_sensor_data(35))
+  File "/home/pi/Projects/iRobot-Alexa-Integration/irobot/robots/create2.py", line 74, in _read_sensor_data
+    raise Exception("Did not receive data")
+Exception: Did not receive data
+192.168.1.165 - - [21/Jan/2019 03:23:59] "GET /clean HTTP/1.1" 500 -
+192.168.1.165 - - [21/Jan/2019 03:24:20] "GET / HTTP/1.1" 200 -
