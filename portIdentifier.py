@@ -1,3 +1,5 @@
+from irobot.robots.create2 import Create2
+from irobot.openinterface.constants import MODES
 #import serial as ser
 #import serial.tools.list_ports as prtlst
 
@@ -19,5 +21,9 @@ def scan():
     return glob.glob('/dev/tty*') + glob.glob('/dev/cu*')
 
 for port in scan():
-    print port
-   # do something to check this port is open.
+	try:
+		robot = Create2(port)
+		print(robot.left_encoder_counts)
+		print port
+		print 'Worked!'
+		# do something to check this port is open.

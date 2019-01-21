@@ -8,4 +8,6 @@ robot = Create2(port)
 print(robot.left_encoder_counts)
 
 robot.ou_mode = MODES.SAFE
-robot.seek_dock()
+#robot.seek_dock()
+
+robot.clean()
